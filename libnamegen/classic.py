@@ -18,10 +18,7 @@ Copyright (C) 2020 BBaoVanC
 # import os
 import random
 import libprogress
-
-# following block is for a file requirement
-# if not os.path.isfile("libnamegen/desiquintans.com_nounlist.txt"):
-#     print("ERROR: desiquintans.com_nounlist.txt could not be found!")
+import liblistloader.desiquintans_nounlist
 
 
 # Generation method
@@ -33,11 +30,7 @@ def gen(count=1, debug=False):
     count -- the amount of names to generate (default 1)
     debug -- whether debug should be printed (default False)
     """
-    # with open("libnamegen/desiquintans.com_nounlist.txt") as f:  # open file
-    #     words = f.readlines()  # read all lines into a list
-    #     # closing the file is not required, the with block does that for us
-    # words = [x.strip("\n") for x in words]  # remove the "\n" from each word
-    words = ["funeral", "union", "tale", "effort", "community"]
+    words = liblistloader.desiquintans_nounlist.words
     wsuffixes = ["ator", "man", "guy", "ifier", "anator", ""]  # suffixes
     wprefixes = ["Mr", "The", ""]  # prefixes
     names = list()  # initialize the names list variable
