@@ -1,0 +1,18 @@
+---
+kind: pipeline
+type: docker
+name: pypi_deploy
+
+steps:
+- name: pypi_publish
+  image: plugins/pypi
+  settings:
+    username:
+      from_secret: PYPI_USERNAME
+    password:
+      from_secret: PYPI_PASSWORD
+
+trigger:
+  event:
+  - tag
+
