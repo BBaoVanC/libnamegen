@@ -1,15 +1,9 @@
 # libnamegen
 
-[![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=BBaoVanC/libnamegen)](https://dependabot.com)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/b40f6391b42a454aacea882ceec864b0)](https://www.codacy.com/manual/BBaoVanC/libnamegen?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=BBaoVanC/libnamegen&amp;utm_campaign=Badge_Grade)
+[![Build Status](https://drone.bbaovanc.com/api/badges/bbaovanc/libnamegen/status.svg)](https://drone.bbaovanc.com/bbaovanc/libnamegen)
 
 ![PyPI](https://img.shields.io/pypi/v/libnamegen)
 ![PyPI - License](https://img.shields.io/pypi/l/libnamegen)
-
-![GitHub issues](https://img.shields.io/github/issues-raw/BBaoVanC/libnamegen)
-![GitHub closed issues](https://img.shields.io/github/issues-closed-raw/BBaoVanC/libnamegen)
-![GitHub pull requests](https://img.shields.io/github/issues-pr-raw/BBaoVanC/libnamegen)
-![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed-raw/BBaoVanC/libnamegen)
 
 Package containing various name generation methods. Originally on my [NameGenerator](https://github.com/BBaoVanC/NameGenerator) project.
 
@@ -93,4 +87,4 @@ print(libnamegen.classic.gen())
 
 ## License
 
-_libnamegen_ is licensed under the GPLv3 license. For more information, please refer to [`LICENSE`](https://github.com/BBaoVanC/libnamegen/blob/master/LICENSE).
+_libnamegen_ is licensed under the GPLv3 license. For more information, please refer to [`LICENSE`](https://git.bbaovanc.com/bbaovanc/libnamegen/src/branch/master/LICENSE).
