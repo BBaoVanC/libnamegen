@@ -20,7 +20,7 @@ setuptools.setup(
     ],
     install_requires=[
           'libprogress<3.0.2',
-          'liblistloader==1.0',
+          'liblistloader==1.0.1',
     ],
     python_requires='>=3.6',
 )
