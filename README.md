@@ -12,7 +12,7 @@ Package containing various name generation methods. Originally on my [NameGenera
 * Easy to use
 * Imported as module
 * Always tested before release
-* Supports latest three versions of Python 3
+* Officially supports latest two versions of Python 3
 
 ---
 
