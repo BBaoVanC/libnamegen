@@ -16,3 +16,34 @@ trigger:
   event:
   - tag
 
+---
+kind: pipeline
+type: docker
+name: python37
+
+steps:
+- name: test
+  image: python:3.7
+  commands:
+  - python --version
+  - pip --version
+  - pip install pytest
+  - pip install -e .
+  - pip list
+  - pytest
+
+---
+kind: pipeline
+type: docker
+name: python38
+
+steps:
+- name: test
+  image: python:3.8
+  commands:
+  - python --version
+  - pip --version
+  - pip install pytest
+  - pip install -e .
+  - pip list
+  - pytest
