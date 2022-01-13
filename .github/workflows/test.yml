@@ -1,0 +1,28 @@
+name: Test
+
+on:
+  push:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version:
+          - "3.9"
+          - "3.10"
+          - pypy-3.9
+          - pypy-3.10
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: ${{ matrix.python-version }}
+      - run: |
+          python --version
+          pip --version
+          pip install pytest
+          pip install -e .
+          pip list
+          pytest
