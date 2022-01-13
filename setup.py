@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="libnamegen",
-    version="3.1.1.post1",
+    version="3.1.1.post2",
     author="BBaoVanC",
     author_email="pypi@bbaovanc.com",
     description="Library containing name generation methods",
