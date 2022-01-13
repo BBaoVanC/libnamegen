@@ -5,13 +5,13 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="libnamegen",
-    version="3.1",
+    version="3.1.1.post1",
     author="BBaoVanC",
-    author_email="bbaovanc@protonmail.com",
+    author_email="pypi@bbaovanc.com",
     description="Library containing name generation methods",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/BBaoVanC/libnamegen",
+    url="https://git.bbaovanc.com/bbaovanc/libnamegen",
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
@@ -19,8 +19,8 @@ setuptools.setup(
         "Operating System :: OS Independent",
     ],
     install_requires=[
-          'libprogress<3.0.2',
-          'liblistloader==1.0',
+          'libprogress<4',
+          'liblistloader<2',
     ],
-    python_requires='>=3.6',
+    python_requires='>=3.7',
 )

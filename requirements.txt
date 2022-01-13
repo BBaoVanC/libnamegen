@@ -1,2 +1,2 @@
-libprogress<3.0.2
-liblistloader==1.0
+libprogress<4
+liblistloader<2

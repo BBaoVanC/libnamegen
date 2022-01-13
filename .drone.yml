@@ -1,0 +1,49 @@
+---
+kind: pipeline
+type: docker
+name: pypi_deploy
+
+steps:
+- name: pypi_publish
+  image: plugins/pypi
+  settings:
+    username:
+      from_secret: PYPI_USERNAME
+    password:
+      from_secret: PYPI_PASSWORD
+
+trigger:
+  event:
+  - tag
+
+---
+kind: pipeline
+type: docker
+name: python37
+
+steps:
+- name: test
+  image: python:3.7
+  commands:
+  - python --version
+  - pip --version
+  - pip install pytest
+  - pip install -e .
+  - pip list
+  - pytest
+
+---
+kind: pipeline
+type: docker
+name: python38
+
+steps:
+- name: test
+  image: python:3.8
+  commands:
+  - python --version
+  - pip --version
+  - pip install pytest
+  - pip install -e .
+  - pip list
+  - pytest

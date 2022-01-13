@@ -5,8 +5,10 @@ Name Generator Method Package.
 by BBaoVanC
 
 !!! THIS PACKAGE WILL NOT WORK IF YOUR PROGRAM IS IN libnamegen/ !!!
-This is a package which contains the various name generation methods used in
-https://github.com/BBaoVanC/NameGenerator
+This is a package which contains various name generation methods.
+
+Documentation:
+https://git.bbaovanc.com/bbaovanc/libnamegen
 
 Copyright (C) 2020 BBaoVanC
 """
